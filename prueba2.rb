@@ -19,7 +19,7 @@ def promedios(arreglo_de_notas, min_aprobacion)
     notas = (datos.map do |num| num.to_i end).sum
       cantidad_notas = datos[1..-1].count.to_f
       promedio = notas/ cantidad_notas
-      if min_aprobacion != '0'
+      if min_aprobacion != 0
         if promedio >= min_aprobacion
           puts "\n#{nombre} aprobó con promedio #{promedio}"
         end
